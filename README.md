@@ -1,12 +1,45 @@
-# React + Vite
+# ElleHacks 2026 Website 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 1. Clone the Repository
+```bash
+git clone https://github.com/ElleHacks/ElleHacks2026-site.git
+```
+```bash
+cd ElleHacks2026-site
+```
+# 2. Install Dependencies
+```bash
+npm install
+```
+To run your code locally:
+```bash
+npm run dev
+```
 
-Currently, two official plugins are available:
+# 3. Switch to your correct branch
+```bash
+git checkout <branch-name>
+```
+Be sure to check you're on the correct branch
+```bash
+git branch
+```
+# 4. Commit your changes
+```bash
+git add .
+```
+```bash
+git commit -m "Describe your changes here"
+```
+# 5. Push to GitHub
+```bash
+git push origin <your-branch-name>
+```
+# 6. Create a Pull Request (PR)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Go to the repository on GitHub  
+2. Click Compare & pull request (you’ll see this after pushing your branch).  
+3. Write a description of your changes 
+4. Submit the PR for review
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Once approved, your changes will be merged into the main branch. 
