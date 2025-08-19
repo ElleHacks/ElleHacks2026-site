@@ -45,4 +45,4 @@ git push origin <your-branch-name>
 
 Once approved, your changes will be merged into the main branch. 
 
-If you bypass the restrictions and merge to main I will cry - Julia
+# If you bypass the restrictions and merge to main I will cry - Julia
