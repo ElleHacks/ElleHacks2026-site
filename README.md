@@ -4,6 +4,7 @@
 ```bash
 git clone https://github.com/ElleHacks/ElleHacks2026-site.git
 ```
+Make sure you're working in the correct directory
 ```bash
 cd ElleHacks2026-site
 ```
