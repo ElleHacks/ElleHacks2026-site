@@ -3,7 +3,10 @@
 # 1. Clone the Repository
 ```bash
 git clone https://github.com/ElleHacks/ElleHacks2026-site.git
+
+(VS Code also has this feature built in)
 ```
+
 Make sure you're working in the correct directory
 ```bash
 cd ElleHacks2026-site
