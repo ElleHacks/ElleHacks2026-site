@@ -1,0 +1,30 @@
+.content{
+    position: relative;
+    left: 10vw;
+    top: 30vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* consistent spacing */
+}
+
+.title {
+    font-size: clamp(2rem, 8vw, 5.6rem);
+    color: #412200;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 1.74vw, 1.8rem);
+    color: #412200;
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/hero/Rectangle 2.png');
+    background-size: cover;
+    background-position: center;
+}
