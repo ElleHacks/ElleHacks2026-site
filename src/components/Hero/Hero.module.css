@@ -1,0 +1,185 @@
+.content{
+    position: relative;
+    left: 10vw;
+    top: 30vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* consistent spacing */
+}
+
+.title {
+    font-size: clamp(2rem, 8vw, 5.6rem);
+    color: #412200;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 1.74vw, 1.8rem);
+    color: #412200;
+    margin: 0;
+}
+
+.applyButtonWrapper {
+  position: relative;
+  width: 29.31vw; /* from Figma */
+  height: 5.27vh; /* from Figma */
+  border-radius: 200px;
+  background-image: url('../../assets/hero/Rectangle 3.png'); /* or use imported image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.37vh 4.17vw 1.46vh 4.17vw;
+  box-sizing: border-box;
+  margin-top: 1rem; /* spacing below subtitle */
+  margin-bottom: 139px;
+}
+
+.applyButtonText {
+  font-family: 'Nobile', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.53vw, 1.4rem);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.table {
+  position: absolute;
+  left: -1.46vw;
+  top: 70.56vh;
+  width: 103.82vw;
+  height: 77.89vh; /* Adjust as needed */
+  z-index: 1; /* Ensure it stays behind the text */
+  opacity:1;
+  pointer-events: none;
+  user-select: none; /* Prevents text selection */
+  object-fit: cover;
+}
+
+.cake {
+    position: absolute;
+    left: 35.83vw;
+    top: 53.16vh;
+    width: 52.77vw;
+    height: 62.36vh;
+    opacity: 1;
+    z-index: 2; 
+    
+}
+
+.redBalloon{
+  position: absolute;
+  left: 6.53vw;
+  top: 78.91vh;
+  width: 14.36vw;
+  height: 27.88vh; /* Adjust as needed */
+  z-index: 1; /* Ensure it stays behind the text */
+}
+
+
+.redTopBalloon {
+    position: absolute;
+    width: 7.2vw;
+    height: 14.8vh;
+    transform: rotate(-10deg);
+    left: 81.80vw;
+    top: 12.40vh;
+}
+
+.greenTopBalloon {
+    position: absolute;
+    width: 11.66vw;
+    height: 20.99vh;
+    transform: rotate(-2deg);
+    left: 87.96vw;
+    top: 47.24vh;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/hero/Rectangle 2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.candle {
+    position: absolute;
+    width: 16.65vw;
+    height: 38.77vh;
+    left: 56.69vw;
+    top:39.41vh;
+    opacity: 1;
+    z-index: 9999;
+    pointer-events: none;
+    user-select: none;
+    object-fit: cover;
+}
+
+.teacup {
+    position: absolute;
+    width: 13.07vw;
+    height: 24.95vh;
+    left: 23.21vw;
+    top: 70vh;
+    opacity: 1;
+    z-index: 2;
+   
+    
+}
+
+.greenBottomBalloon {
+    position: absolute;
+    width: 13.98vw;
+    height: 23.78vh;
+    transform: rotate(-2deg);
+    left: vw;
+    top: 70.26vh;
+    z-index: 2; /* higher than .table's z-index */
+}
+
+.bottomBalloons {
+    position: absolute;
+    width: 39.82vw;
+    height: 77.58vh;
+    left: -6vw;
+    top: 65.26vh;
+    z-index: 2; /* higher than .table's z-index */
+}
+
+.topLeftBalloons {
+    position: absolute;
+    width: 28.55vw;
+    height: 34.02vh;
+    left: -4.5vw;
+    top: 5.71vh;
+    z-index: 2; /* higher than .table's z-index */
+}
+
+.teacupGirl {
+    position: absolute;
+    width:8.05vw;
+    height: 11.04vh;
+    left: 26.54vw;
+    top: 62.08vh;
+    opacity: 1;
+    z-index: 2; /* Ensure it stays above other elements */
+    pointer-events: none; /* Prevent interaction */
+    user-select: none; /* Prevent text selection */
+
+}
+
+.topRightBalloons {
+    position: absolute;
+    width: 22.76vw;
+    height: 61.92vh;
+    left: 79.80vw;
+    top: 12.71vh;
+    z-index: 2; /* higher than .table's z-index */
+}
+
