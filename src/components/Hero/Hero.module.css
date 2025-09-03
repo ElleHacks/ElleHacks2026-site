@@ -37,11 +37,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 114px;
+    padding: 10px 114px 0;
     z-index: 100;
 }
 
-.nav-links {
+.navLinks {
     display: flex;
     gap: min(4.16vw, 60px); 
 
@@ -56,11 +56,14 @@ body {
     opacity: 1;
 }
 
+.navLinks a:hover {
+        color: #D1A996; /* Change to this color on hover */
+    }
+
 .logo {
     width: min(5.94vw, 85.56px);
     height: min(7.43vw, 107px);
-    top: 2px;
-    background: url('images/logo 2.png') no-repeat;
+    background: url('../../assets/hero/logo square.png') no-repeat;
     background-size: contain;
     opacity: 1;
 }
@@ -68,7 +71,7 @@ body {
 .MLHlogo {
     display: block;
     max-width: 100px;
-    min-width: 60px;
+    min-width: 40px;
     position: fixed;
     right: 50px;
     top: clamp(60px, 7.64vw, 110px);
@@ -97,10 +100,10 @@ body {
     margin-bottom: 0; /* Remove margin from the last dash */
 }
 
-.mainontent {
+.mainContent {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Responsive absolute positioning */
@@ -108,7 +111,7 @@ body {
 [class*="Cup"],
 .Candle,
 .cake,
-.cup-girl,
+.cupGirl,
 .ellipse-6 {
     position: absolute;
     object-fit: contain;
@@ -206,7 +209,7 @@ body {
 .leftmultipleBalloons {
     width: 45vw;
     height: 55vw;
-    right: 62vw;
+    left: -9vw;
     top: 42vw;
     position: absolute;
     object-fit: contain;
@@ -289,14 +292,18 @@ body {
         z-index: 98;
     }
 
-    .nav-links.active {
+    .navLinks.active {
         display: flex; /* Show when toggled */
     }
 
-    .nav-links a {
+    .navLinks a {
         font-size: 16px;
         margin: 10px 0; /* Vertical spacing */
         text-align: center;
+    }
+
+    .navLinks a:hover {
+        color: #D1A996; /* Change to this color on hover */
     }
 
 
@@ -305,26 +312,122 @@ body {
         width: 80vw;
         font-size: 8vw;
         left: 10vw;
-        top: 15vw;
+        top: 39vw;
     }
 
     .subtitle {
-        width: 80vw;
+        width: 60vw;
         font-size: 3vw;
         left: 10vw;
-        top: 25vw;
+        top: 49vw;
     }
 
-    .cta-button {
+    .ctaButton {
         width: 50vw;
         height: 6vw;
         left: 10vw;
-        top: 32vw;
+        top: 57.5vw;
     }
 
-    .cta-text {
+    .ctaText {
         font-size: 3vw;
         line-height: 3.5vw;
+    }
+
+    /* Decorative elements */
+    .Candle {
+        width: 18vw;
+        height: 20vw;
+        left: 59.2vw;
+        top: 65.5vw;
+        position: absolute;
+        object-fit: contain;
+        z-index: 2;
+    }
+
+    .yellowBalloon {
+        position: absolute;
+        width: 25vw;
+        height: 33vw;
+        left: 0vw;
+        top: 7vw;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .rightBalloon {
+        position: absolute;
+        width: 22vw;
+        height: 48vw;
+        left: 75vw;
+        top: 25vw;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .cupGirl {
+        position: absolute;
+        width: 8vw;
+        height: 13vw;
+        left: 29vw;
+        top: 71.12vw; 
+        object-fit: contain;
+        z-index: 2;
+    }
+
+    .leftmultipleBalloons {
+        width: 45vw;
+        height: 55vw;
+        left: -9vw;
+        top: 77vw;
+        position: absolute;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+
+    .coffeeCup {
+        width: 16vw;
+        height: 21vw;
+        left: 24.5vw;
+        top: 78vw;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .cake {
+        width: 60vw;
+        height: 40vw;
+        left: 36vw;
+        top: 68.54vw;
+        position: absolute;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .gradient {
+        position: absolute;
+        top: -13vw;
+        left: 0vw;
+        width: 155%;  
+        min-height: 143vw;
+        object-fit: contain; 
+        opacity: 0.73;
+        mix-blend-mode: overlay; 
+        pointer-events: none;
+        z-index: 5;
+    }
+
+    .table{
+        position: absolute;
+        width: 110vw;
+        height: 55vw;
+        left: -4vw;
+        top: 80vw; 
+        background: #D1A996;
+        border-radius: 50%;
+        object-fit: contain;
+        z-index: 0;
     }
 
 

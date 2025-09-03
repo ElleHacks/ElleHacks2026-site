@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <>
       <header className={styles.navbar}>
-        <div className={styles.logo} style={{ backgroundImage: `url(${logoSquare})` }}></div>
+        <div className={styles.logo}></div>
         <div className={styles.hamburger} onClick={toggleNav}>
           <span></span>
           <span></span>
@@ -50,7 +50,7 @@ const Hero = () => {
         <img src={yellowBalloon} alt="Yellow Balloon" className={styles.yellowBalloon} draggable="false" onContextMenu={(e) => e.preventDefault()} />
         <img src={rightBalloon} alt="Right Balloon" className={styles.rightBalloon} draggable="false" onContextMenu={(e) => e.preventDefault()} />
         <img src={cupGirl} alt="Girl holding the coffee cup" className={styles.cupGirl} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={leftMultipleBalloons} alt="Blue Balloon" className={styles.leftmultipleBalloons} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+        <img src={leftMultipleBalloons} alt="Left Balloon" className={styles.leftmultipleBalloons} draggable="false" onContextMenu={(e) => e.preventDefault()} />
         <img src={coffeeCup} alt="Coffee Cup" className={styles.coffeeCup} draggable="false" onContextMenu={(e) => e.preventDefault()} />
         <img src={cake} alt="Cake" className={styles.cake} draggable="false" onContextMenu={(e) => e.preventDefault()} />
         <img src={gradient} alt="Gradient" className={styles.gradient} draggable="false" onContextMenu={(e) => e.preventDefault()} />
