@@ -1,0 +1,105 @@
+.contactUsSection {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-image: url('../../assets/contactus/Rectangle 11.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.highlight {
+    position: relative;
+    width: 26.6vw;      /* 510px / 1920px */
+    font-family: 'Nobile', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1vw;   /* 40px / 1920px */
+    line-height: 4.2vh; /* 45px / 1080px */
+    color: #FFFFFF;
+}
+
+.header {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 55%;
+    z-index: 10;
+}
+
+.logo {
+    width: 10%; 
+    min-width: 40px;;
+}
+
+.socialLinks {
+    display: flex;
+    gap: clamp(0.35rem, 2vw, 1.5rem);
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+}
+
+.socialLinks a {
+    color: #FFFFFF;
+    transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.socialLinks a:hover {
+    color: #d8c8ff;
+    transform: translateY(-2px);
+}
+
+.socialLinks svg {
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.windowImg {
+    position: absolute;
+    top: 3%;
+    right: -5%;
+    width: 70%; 
+    z-index: 1;
+    z-index: 7;
+}
+
+.windowGlow {
+    position: absolute;
+    top: 12vh;
+    right: 15vw;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    filter: blur(35px);
+    background: radial-gradient(closest-side, rgba(255,255,255,0.25), rgba(255,255,255,0));
+    z-index: 6;
+    pointer-events: none;
+}
+
+.tableShape {
+    position: absolute;
+    width: 150%;
+    height: 145%;
+    left: -25%;
+    bottom: -120%;
+    background: linear-gradient(180deg, #B88974 0%, #412200 93.27%);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.laptopImg {
+    position: absolute;
+    bottom: -15%;
+    left: 18%;
+    width: 35%;
+    z-index: 6;
+}
+
+.teaImg {
+    position: absolute;
+    bottom: 2%;
+    right: 15%;
+    width: 30%;
+    z-index: 6;
+}
