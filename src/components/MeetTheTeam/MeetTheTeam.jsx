@@ -168,12 +168,64 @@ const teamData = {
       }
     ]
   },
+    Logistics2: {
+    title: "Logistics",
+    slideConfig: {
+      width: "100vw",
+      height: "68vh", 
+      bgColor: "#A7748E"
+    },
+    decorations: [
+      {
+        type: "label",
+        text: "Logistics",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      },
+      {
+        type: "image",
+        src: "src/assets/meettheteam/group.png", // brown flower
+        position: "absolute bottom-[2vh] left-[19vw] w-[5vw]"
+      },
+      {
+        type: "image",
+        src: "src/assets/meettheteam/component27.png", // spoon
+        position: "absolute top-[5vh] right-[30vw] w-[5vw]"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/image81.png", // pink pie
+        position: "absolute top-[5vh] right-[21vw] w-[10vw]"
+      },
+    ],
+    members: [
+      {
+        name: "Seyedeh Sara Alav",
+        image: "src/assets/meettheteam/seyedeh-nametag.png",
+        position: "absolute top-[5vh] left-[20vw] w-[16vw]"
+      },
+      {
+        name: "Bohina Manochehrzadeh",
+        image: "src/assets/meettheteam/bohina-nametag.png", 
+        position: "absolute top-[5vh] left-[50vw] w-[6vw]"
+      },
+      {
+        name: "Irqa Inam",
+        image: "src/assets/meettheteam/iqra-nametag.png",
+        position: "absolute top-[34vh] left-[35vw] w-[15vw]"
+      },
+      {
+        name: "Maryam Malik",
+        image: "src/assets/meettheteam/maryam-nametag.png",
+        position: "absolute top-[34vh] left-[55vw] w-[16vw]"
+      }
+    ]
+  },
 }
 // Convert to slides array for compatibility
 const slides = [
   teamData.coChairs,
   teamData.Logistics1,
-
+  teamData.Logistics2,
 ];
 
 // ----------------------
