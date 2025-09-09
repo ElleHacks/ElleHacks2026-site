@@ -220,12 +220,70 @@ const teamData = {
       }
     ]
   },
+    IT1: {
+    title: "IT",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image", 
+        src: "src/assets/meettheteam/director-tag.png",
+        position: "absolute top-[-2vh] left-[27vw] w-[10vw]"
+      },
+      {
+        type: "image",
+        src: "src/assets/meettheteam/component1.png",
+        position: "absolute top-[50vh] left-[2vw] w-[4.2vw]"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/component2.png",
+        position: "absolute top-[35vh] right-[20vw] w-[15vw]"
+      },
+      {
+        type: "label",
+        text: "IT",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      }
+    ],
+    members: [
+      {
+        name: "Joanne Wijetunga",
+        image: "src/assets/meettheteam/joanne-nametag.png",
+        position: "absolute top-[5vh] left-[18vw] w-[16vw]"
+      },
+      {
+        name: "Fares Islam", 
+        image: "src/assets/meettheteam/fares-nametag.png",
+        position: "absolute top-[5vh] left-[38vw] w-[16vw]"
+      },
+      {
+        name: "Yazan Haddad",
+        image: "src/assets/meettheteam/yazan-nametag.png",
+        position: "absolute top-[5vh] left-[58vw] w-[16vw]"
+      },
+      {
+        name: "Ifra Inam",
+        image: "src/assets/meettheteam/ifra-nametag.png",
+        position: "absolute top-[35vh] left-[28vw] w-[16vw]"
+      },
+      {
+        name: "Madeleine Phan",
+        image: "src/assets/meettheteam/madeleine-nametag.png",
+        position: "absolute top-[35vh] left-[48vw] w-[16vw]"
+      }
+    ]
+  },
 }
 // Convert to slides array for compatibility
 const slides = [
   teamData.coChairs,
   teamData.Logistics1,
   teamData.Logistics2,
+  teamData.IT1
 ];
 
 // ----------------------
