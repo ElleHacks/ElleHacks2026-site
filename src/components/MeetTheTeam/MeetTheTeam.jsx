@@ -325,6 +325,65 @@ const teamData = {
       }
     ]
   },
+    Marketing: {
+    title: "Marketing",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image", 
+        src: "src/assets/meettheteam/image81.png", // pink pie
+        position: "absolute top-[45vh] right-[21vw] w-[10vw]"
+      },
+      {
+        type: "image",
+        src: "src/assets/meettheteam/component27.png", // spoon
+        position: "absolute top-[48vh] right-[18vw] w-[5vw] rotate-180"
+      },
+      {
+        type: "image",
+        src: "src/assets/meettheteam/component1.png",
+        position: "absolute top-[50vh] left-[8vw] w-[4.2vw]"
+      },
+      {
+        type: "label",
+        text: "Marketing",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      }
+    ],
+    members: [
+      {
+        name: "Abeeha Zubair",
+        image: "src/assets/meettheteam/abeeha-nametag.png",
+        position: "absolute top-[5vh] left-[22vw] w-[16vw]"
+      },
+      {
+        name: "Julie Bautista",
+        image: "src/assets/meettheteam/julie-nametag.png",
+        position: "absolute top-[5vh] left-[42vw] w-[16vw]"
+      },
+      {
+        name: "Kimili Nguyen",
+        image: "src/assets/meettheteam/kimili-nametag.png",
+        position: "absolute top-[5vh] left-[62vw] w-[16vw]"
+      },
+      {
+        name: "Larissa Singh",
+        image: "src/assets/meettheteam/larissa-nametag.png",
+        position: "absolute top-[35vh] left-[32vw] w-[16vw]"
+      },
+      {
+        name: "Nabeela Ansari",
+        image: "src/assets/meettheteam/nabeela-nametag.png",
+        position: "absolute top-[35vh] left-[52vw] w-[16vw]"
+      }
+    ]
+  },
+  
+  
 }
 // Convert to slides array for compatibility
 const slides = [
@@ -333,6 +392,7 @@ const slides = [
   teamData.Logistics2,
   teamData.IT1,
   teamData.IT2,
+  teamData.Marketing,
 ];
 
 // ----------------------
