@@ -277,13 +277,62 @@ const teamData = {
       }
     ]
   },
+    IT2: {
+    title: "IT",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image",
+        src: "src/assets/meettheteam/component39.png",
+        position: "absolute top-[3vh] right-[41vw] w-[17vw]"
+      },
+     
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/image67.png",
+        position: "absolute top-[35vh] right-[27vw] w-[7vw] rotate-270"
+      },
+      {
+        type: "label",
+        text: "IT",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      }
+    ],
+    members: [
+      {
+        name: "Natalie Lewis",
+        image: "src/assets/meettheteam/natalie-nametag.png",
+        position: "absolute top-[5vh] left-[22vw] w-[16vw]"
+      },
+      {
+        name: "Nina Dang",
+        image: "src/assets/meettheteam/nina-nametag.png",
+        position: "absolute top-[5vh] left-[62vw] w-[16vw]"
+      },
+      {
+        name: "Angad Ahluwalia",
+        image: "src/assets/meettheteam/angad-nametag.png",
+        position: "absolute top-[35vh] left-[32vw] w-[16vw]"
+      },
+      {
+        name: "Sidney Liu",
+        image: "src/assets/meettheteam/sidney-nametag.png",
+        position: "absolute top-[35vh] left-[52vw] w-[16vw]"
+      }
+    ]
+  },
 }
 // Convert to slides array for compatibility
 const slides = [
   teamData.coChairs,
   teamData.Logistics1,
   teamData.Logistics2,
-  teamData.IT1
+  teamData.IT1,
+  teamData.IT2,
 ];
 
 // ----------------------
