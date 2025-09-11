@@ -394,7 +394,6 @@ const teamData = {
         src: "src/assets/meettheteam/cake-rectangle.png",
         position: "absolute top-[45vh] right-[42vw] w-[15vw] rotate-10"
       },
-     
       {
         type: "image", 
         src: "src/assets/meettheteam/beige-flowers.png",
@@ -429,7 +428,73 @@ const teamData = {
       },
     ]
   },
-
+  Outreach: {
+    title: "Outreach",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image",
+        src: "src/assets/meettheteam/pink-flower.png",
+        position: "absolute top-[5vh] right-[22vw] w-[5vw]"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/director-tag.png",
+        position: "absolute top-[-2vh] left-[25vw] w-[10vw]"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/beige-flowers.png",
+        position: "absolute top-[35vh] right-[27vw] w-[7vw] rotate-270"
+      },
+      { 
+        type: "label",
+        text: "Outreach",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/beige-flowers.png",
+        position: "absolute top-[5vh] left-[35vw] w-[7vw] rotate-270"
+      },
+    ],
+    members: [
+      {
+        name: "Brianna Nguyen",
+        image: "src/assets/meettheteam/brianna-nametag.png",
+        position: "absolute top-[5vh] left-[16vw] w-[16vw]"
+      },
+      {
+        name: "Rosa Sakhpour",
+        image: "src/assets/meettheteam/rosa-nametag.png",
+        position: "absolute top-[5vh] left-[36vw] w-[16vw]"
+      },
+      {
+        name: "Tasfia Afrida",
+        image: "src/assets/meettheteam/tasfia-nametag.png",
+        position: "absolute top-[5vh] left-[56vw] w-[16vw]"
+      },
+{
+        name: "Raazia Shohab",
+        image: "src/assets/meettheteam/raazia-nametag.png",
+        position: "absolute top-[35vh] left-[26vw] w-[16vw]"
+      },
+      {
+        name: "Tithi Patel",
+        image: "src/assets/meettheteam/tithi-nametag.png",
+        position: "absolute top-[35vh] left-[44vw] w-[16vw]"
+      },
+      {
+        name: "Niyoosha Tahimi",
+        image: "src/assets/meettheteam/niyoosha-nametag.png",
+        position: "absolute top-[35vh] left-[62vw] w-[16vw]"
+      },
+    ]
+  },
 }
 // Convert to slides array for compatibility
 const slides = [
@@ -440,6 +505,7 @@ const slides = [
   teamData.IT2,
   teamData.Marketing,
   teamData.Design,
+  teamData.Outreach,
 ];
 
 // ----------------------
