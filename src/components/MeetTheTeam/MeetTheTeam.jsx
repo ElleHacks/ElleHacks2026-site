@@ -73,12 +73,12 @@ const teamData = {
     decorations: [
       {
         type: "image",
-        src: "src/assets/meettheteam/component1.png",
+        src: "src/assets/meettheteam/pink-flower.png",
         position: "absolute top-[50vh] left-[2vw] w-[4.2vw]"
       },
       {
         type: "image", 
-        src: "src/assets/meettheteam/component2.png",
+        src: "src/assets/meettheteam/cake-square.png",
         position: "absolute top-[35vh] right-[20vw] w-[15vw]"
       },
       {
@@ -131,12 +131,12 @@ const teamData = {
       },
       {
         type: "image",
-        src: "src/assets/meettheteam/component39.png",
+        src: "src/assets/meettheteam/cake-rectangle.png",
         position: "absolute top-[5vh] right-[10vw] w-[15vw]"
       },
       {
         type: "image", 
-        src: "src/assets/meettheteam/image67.png",
+        src: "src/assets/meettheteam/beige-flowers.png",
         position: "absolute top-[40vh] left-[2vw] w-[10vw]"
       },
       {
@@ -183,17 +183,17 @@ const teamData = {
       },
       {
         type: "image",
-        src: "src/assets/meettheteam/group.png", // brown flower
+        src: "src/assets/meettheteam/green-flower.png", // brown flower
         position: "absolute bottom-[2vh] left-[19vw] w-[5vw]"
       },
       {
         type: "image",
-        src: "src/assets/meettheteam/component27.png", // spoon
+        src: "src/assets/meettheteam/spoon.png", // spoon
         position: "absolute top-[5vh] right-[30vw] w-[5vw]"
       },
       {
         type: "image", 
-        src: "src/assets/meettheteam/image81.png", // pink pie
+        src: "src/assets/meettheteam/pie.png", // pink pie
         position: "absolute top-[5vh] right-[21vw] w-[10vw]"
       },
     ],
@@ -235,12 +235,12 @@ const teamData = {
       },
       {
         type: "image",
-        src: "src/assets/meettheteam/component1.png",
+        src: "src/assets/meettheteam/pink-flower.png",
         position: "absolute top-[50vh] left-[2vw] w-[4.2vw]"
       },
       {
         type: "image", 
-        src: "src/assets/meettheteam/component2.png",
+        src: "src/assets/meettheteam/cake-square.png",
         position: "absolute top-[35vh] right-[20vw] w-[15vw]"
       },
       {
@@ -287,13 +287,12 @@ const teamData = {
     decorations: [
        {
         type: "image",
-        src: "src/assets/meettheteam/component39.png",
+        src: "src/assets/meettheteam/cake-rectangle.png",
         position: "absolute top-[3vh] right-[41vw] w-[17vw]"
       },
-     
       {
         type: "image", 
-        src: "src/assets/meettheteam/image67.png",
+        src: "src/assets/meettheteam/beige-flowers.png",
         position: "absolute top-[35vh] right-[27vw] w-[7vw] rotate-270"
       },
       {
@@ -335,17 +334,17 @@ const teamData = {
     decorations: [
        {
         type: "image", 
-        src: "src/assets/meettheteam/image81.png", // pink pie
+        src: "src/assets/meettheteam/pie.png", // pink pie
         position: "absolute top-[45vh] right-[21vw] w-[10vw]"
       },
       {
         type: "image",
-        src: "src/assets/meettheteam/component27.png", // spoon
+        src: "src/assets/meettheteam/spoon.png", // spoon
         position: "absolute top-[48vh] right-[18vw] w-[5vw] rotate-180"
       },
       {
         type: "image",
-        src: "src/assets/meettheteam/component1.png",
+        src: "src/assets/meettheteam/pink-flower.png",
         position: "absolute top-[50vh] left-[8vw] w-[4.2vw]"
       },
       {
@@ -382,8 +381,55 @@ const teamData = {
       }
     ]
   },
-  
-  
+  Design: {
+    title: "Design",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image",
+        src: "src/assets/meettheteam/cake-rectangle.png",
+        position: "absolute top-[45vh] right-[42vw] w-[15vw] rotate-10"
+      },
+     
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/beige-flowers.png",
+        position: "absolute top-[35vh] right-[27vw] w-[7vw] rotate-270"
+      },
+      {
+        type: "label",
+        text: "Design",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/beige-flowers.png",
+        position: "absolute top-[5vh] left-[35vw] w-[7vw] rotate-270"
+      },
+    ],
+    members: [
+      {
+        name: "Samreen Ahmed",
+        image: "src/assets/meettheteam/samreen-nametag.png",
+        position: "absolute top-[35vh] left-[22vw] w-[16vw]"
+      },
+      {
+        name: "Subin Hwang",
+        image: "src/assets/meettheteam/subin-nametag.png",
+        position: "absolute top-[5vh] left-[41vw] w-[16vw]"
+      },
+      {
+        name: "Tashfia Oyshi",
+        image: "src/assets/meettheteam/tashfia-nametag.png",
+        position: "absolute top-[35vh] left-[62vw] w-[16vw]"
+      },
+    ]
+  },
+
 }
 // Convert to slides array for compatibility
 const slides = [
@@ -393,6 +439,7 @@ const slides = [
   teamData.IT1,
   teamData.IT2,
   teamData.Marketing,
+  teamData.Design,
 ];
 
 // ----------------------
