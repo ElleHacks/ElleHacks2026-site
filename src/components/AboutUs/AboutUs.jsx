@@ -5,6 +5,7 @@ function AboutUs() {
         <>
                 <section className="relative overflow-hidden bg-gradient-to-b from-[#DFA99D] to-[#B9756C] w-full min-h-screen lg:px-55 sm:px-35 px-10 py-50">
 
+                    <img alt="Gradient Overlay" src="src/assets/aboutus/Rectangle-gradient.png" className="absolute top-0 left-0 w-full h-full object-cover opacity-70 mix-blend-overlay pointer-events-none z-0" />
                     <img alt="" src="src/assets/aboutus/top-right.png" className="absolute top-[clamp(0.1rem,0.5vw,3rem)] right-[clamp(-10rem,-6.7vw,-2rem)] w-[clamp(12rem,31vw,38rem)]"/>
                     <img alt="" src="src/assets/aboutus/top-left.png" className="absolute top-[clamp(-20rem,-15vw,-5.5rem)] left-[clamp(-15rem,-5.9vw,-2.1rem)] w-[clamp(15rem,40vw,45rem)]"/>
                     <img alt="" src="src/assets/aboutus/bottom-right.png" className="absolute bottom-[clamp(-30rem,-26vw,-11rem)] right-[clamp(-5rem,-0.4vw,2rem)] w-[clamp(10rem,23vw,30rem)]"/> 
