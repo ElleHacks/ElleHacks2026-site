@@ -1,22 +1,171 @@
+:root {
+    --base-width: 1440px; /* to match figma artboard width */
+    --scale-factor: calc(100vw / var(--base-width));
+    --nav-height: 110px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .locationSection {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/location/Rectangle 9.png');
+    /*background-image: url('../../assets/location/Rectangle 9.png');*/
+    background: linear-gradient(180deg, #A168A1 0%, #704581 100%);
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay; 
+    /* min-height: 50.48vw;
+    background: linear-gradient(180deg, #A168A1 0%, #704581 100%);
+    font-family: 'Nobile', sans-serif;
+    transform-origin: top left;
+    transform: scale(var(--scale-factor));
+    overflow: hidden;
+    background-blend-mode: overlay; */
 }
 
-.highlight {
+.locationSection::before {
+    content: '';
     position: absolute;
-    width: 14.3vw;      /* 274px / 1920px */
-    height: 6.3vh;      /* 68px / 1080px */
-    left: 10vw;         /* 192px / 1920px */
-    top: 7vh;           /* 76px / 1080px */
-    font-family: 'Nobile', sans-serif;
-    font-style: normal;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50.48vw;
+    background: url('../../assets/location/texture.png') center/cover;
+    opacity: 0.73; 
+    z-index: 1; 
+    mix-blend-mode: overlay; 
+    pointer-events: none; 
+}
+
+.locationTitle,
+.mapIframe,
+.addressTitle,
+.addressText,
+.interactiveMapButton,
+.interactiveMapText {
+    position: relative; 
+    z-index: 2; 
+}
+
+.locationTitle {
+    position: absolute;
+    width: 19.02vw;
+    height: 4.72vw;
+    left: 13.33vw;
+    top: 4.5vw;
     font-weight: 700;
-    font-size: 3.1vw;   /* 60px / 1920px */
-    line-height: 3.5vw; /* 68px / 1920px */
+    font-size: 4.16vw;
+    line-height: 4.72vw;
     color: #FFFFFF;
+}
+
+.mapIframe {
+    position: absolute;
+    width: 36.8vw;
+    height: 33.05vw;
+    left: 13.33vw;
+    top: 11.31vw;
+    border: none;
+    border-radius: 2.01vw;
+    filter: drop-shadow(0, 0.27vw, 0.55vw) rgba(0, 0, 0, 0.2);
+}
+
+.addressTitle {
+    position: absolute;
+    width: 8.88vw;
+    height:2.5vw;
+    left: 55vw;
+    top: 11.31vw;
+    font-weight: 500;
+    font-size:2.22vw;
+    line-height: 2.5vw;
+    color: #FFFFFF;
+}
+
+.addressText {
+    position: absolute;
+    width: 33.61vw;
+    height: 9.72vw;
+    left: 55vw;
+    top: 16.31vw;
+    font-weight: 400;
+    font-size: 1.73vw;
+    line-height: 2.43vw;
+    color: #FFFFFF;
+}
+
+.interactiveMapButton {
+    position: absolute;
+    width: 25.55vw;
+    height: 3.54vw;
+    left: 55vw;
+    top: 29.93vw;
+    background: #FFFFFF;
+    border-radius: 2.25vw;
+}
+
+.interactiveMapText {
+    position: absolute;
+    width: 26.45vw;
+    height: 2.43vw;
+    left: 57.36vw;
+    top: 31.04vw;
+    font-weight: 500;
+    font-size: 1.66vw;
+    line-height: 1.87vw;
+    text-decoration-line: underline;
+    color: #F13C4A;
+    cursor: pointer;
+}
+
+.interactiveMapText:hover {
+    color: #d13442;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .locationSection {
+        min-height: min(85vw, 1000px); 
+        padding-bottom: 40px;
+    }
+
+    .locationSection::before {
+        min-height: min(85vw, 1000px); 
+    }
+    
+    .mapIframe {
+        width: 55vw;
+        left: 13.33vw;
+        top: 15vw;
+    }
+    
+    .addressTitle {
+        top: 55vw;
+        left: 13.33vw;
+        width: 30%;
+    }
+    
+    .addressText {
+        top: 60vw;
+        left: 13.33vw;
+        width: 30%;
+    }
+    
+    .interactiveMapButton {
+        top: 72vw;
+        width: 27.55vw;
+        left: 13.33vw;
+    }
+    
+    .interactiveMapText {
+        top: 73.1vw;
+        left: 16.7vw;
+        width: 80%;
+    }
+
 }
