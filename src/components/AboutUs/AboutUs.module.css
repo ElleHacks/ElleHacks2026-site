@@ -1,4 +1,4 @@
-.aboutUsSection {
+/* .aboutUsSection {
     position: relative; 
     overflow: visible;
     width: 100vw;
@@ -10,7 +10,7 @@
 
 .aboutUsContent {
     position: absolute;
-    left: 13.33vw;  /* use % or rem for responsiveness */
+    left: 13.33vw;
     top: 27.85vh;
     width: 40vw;
     z-index: 10;
@@ -31,7 +31,11 @@
 .paragraph {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    position: static;  /* remove the top offset */
+    position: static;
     color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+} */
+
+body {
+      overflow-x: hidden;
 }
