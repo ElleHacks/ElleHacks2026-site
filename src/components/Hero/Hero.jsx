@@ -46,15 +46,18 @@ const Hero = () => {
           <span className={styles.ctaText}>Interested in Participating?</span>
         </div>
 
-        <img src={candle} alt="Candle" className={styles.Candle} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={yellowBalloon} alt="Yellow Balloon" className={styles.yellowBalloon} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={rightBalloon} alt="Right Balloon" className={styles.rightBalloon} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={cupGirl} alt="Girl holding the coffee cup" className={styles.cupGirl} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={leftMultipleBalloons} alt="Left Balloon" className={styles.leftmultipleBalloons} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={coffeeCup} alt="Coffee Cup" className={styles.coffeeCup} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={cake} alt="Cake" className={styles.cake} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <img src={gradient} alt="Gradient" className={styles.gradient} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-        <div className={styles.table}></div>
+        <div className={styles.decorations}>
+          <img src={candle} alt="Candle" className={styles.Candle} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={yellowBalloon} alt="Yellow Balloon" className={styles.yellowBalloon} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={rightBalloon} alt="Right Balloon" className={styles.rightBalloon} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={cupGirl} alt="Girl holding the coffee cup" className={styles.cupGirl} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={leftMultipleBalloons} alt="Left Balloon" className={styles.leftmultipleBalloons} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={coffeeCup} alt="Coffee Cup" className={styles.coffeeCup} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={cake} alt="Cake" className={styles.cake} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <img src={gradient} alt="Gradient" className={styles.gradient} draggable="false" onContextMenu={(e) => e.preventDefault()} />
+          <div className={styles.table}></div>
+        </div>
+
         <div className={styles.MLHlogo}>
           <a
             id="mlh-trust-badge"

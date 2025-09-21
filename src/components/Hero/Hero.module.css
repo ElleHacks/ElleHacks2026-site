@@ -6,7 +6,7 @@
     --nav-height: 110px; 
 }
 
-* {
+.mainContent * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -103,7 +103,14 @@ body {
 .mainContent {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 120vh;
+    overflow: visible;
+}
+
+.decorations {
+    position: relative; /* acts as a frame for absolute children */
+    width: 100%;
+    height: auto;       /* let it grow with content */
 }
 
 /* Responsive absolute positioning */
@@ -164,6 +171,8 @@ body {
     line-height: 1.73vw;
     color: #FFFFFF;
 }
+
+
 
 /* Decorative elements */
 .Candle {
@@ -428,7 +437,8 @@ body {
         border-radius: 50%;
         object-fit: contain;
         z-index: 0;
-    }
+    }  
 
+    
 
 }
