@@ -4,7 +4,7 @@
     --nav-height: 110px; 
 }
 
-* {
+.locationSection * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -87,7 +87,7 @@
     color: #FFFFFF;
 }
 
-.addressText {
+.locationSection .addressText {
     position: absolute;
     width: 33.61vw;
     height: 9.72vw;
