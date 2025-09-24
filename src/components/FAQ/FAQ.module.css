@@ -8,7 +8,7 @@
 }
 
 .highlight {
-    position: absolute;
+    /* position: absolute; */
     width: 10vw;      /* 192px / 1920px */
     height: 5.8vh;    /* 63px / 1080px */
     left: 10vw;       /* 192px / 1920px */

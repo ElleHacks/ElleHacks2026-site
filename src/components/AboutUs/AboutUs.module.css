@@ -1,6 +1,6 @@
 .aboutUsSection {
     position: relative; 
-    overflow: visible;
+    /* overflow: visible; */
     width: 100vw;
     height: 100vh;
     background-image: url('../../assets/aboutus/Rectangle 5.png');
