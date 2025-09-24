@@ -11,7 +11,8 @@ import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app-container bg-[#FFEED6]">
+      
       <Hero />
       <AboutUs />
       <Sponsors />

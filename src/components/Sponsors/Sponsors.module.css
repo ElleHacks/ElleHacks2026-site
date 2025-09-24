@@ -1,27 +1,259 @@
-.sponsorsSection {
-    position: relative; 
-    overflow: visible;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../assets/sponsors/Rectangle 6.png');
-    background-size: cover;
-    background-position: center;
+@import url('https://fonts.googleapis.com/css2?family=Nobile:wght@400;700&display=swap');
+
+/* Sponsors Page Styles */
+html, body, #root, .sponsors-container {
+  /* height: 100%; */
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.highlight {
-    position: absolute;
-    width: 33vw;
-    height: 13vh;
-    left: 10vw;
-    top: 23vh;
-
-    font-family: 'Nobile', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3vw;
-    line-height: 3.5vw;
-
-    color: #412200;
-
-    text-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+.sponsors-container {
+  min-height: 100vh;
+  position: relative;
+  background-color: #FFEED6;
+  padding: 2vw;
 }
+
+/* .curtain-stage {
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #E8B4B8 0%, #D4969B  50%, #C8888E 100%);
+  border-radius: 0 0 3vw 3vw;
+  overflow: hidden;
+}
+
+.curtain-top {
+  height: 8vw;
+  background: #B8777D;
+  position: relative;
+} */
+
+/* .curtain-scallops {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4vw;
+  background: radial-gradient(circle at 6.25vw 0, transparent 3vw, #B8777D 3vw);
+  background-size: 12.5vw 4vw;
+} */
+
+.stage-content {
+  background-color: #FFEED6;
+  padding: 4vw;
+  min-height: 50vw;
+  position: relative;
+}
+
+.sponsors-title {
+  position: relative;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #412200; 
+  text-align: left;
+  z-index: 30;  
+  padding-left: 7vw;
+  margin-bottom: 4vw;
+  font-family: 'Nobile', Arial, sans-serif;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.sponsor-card {
+  margin: 1vw;
+  background: white;
+  border-radius: 2vw;
+  aspect-ratio: 2.5/1;
+  box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.1);
+  border: 0.2vw solid #BD7777; /* Green outline */
+  flex: 1 1 20vw;
+  min-width: 20vw;
+  max-width: 22vw;
+  font-family: 'Nobile', Arial, sans-serif;
+  transition: transform 0.22s cubic-bezier(0.4, 0.2, 0.2, 1),
+    box-shadow 0.22s cubic-bezier(0.4, 0.2, 0.2, 1),
+    border-color 0.22s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.sponsor-card.large {
+  flex: 2 1 44vw;
+  min-height: 20vh;
+  max-height: 25vh;
+  min-width: 25vw;
+  max-width: 30vw;
+  border: 0.2vw solid rgb(205, 127, 50); /* Darker green outline for large cards */
+  font-family: 'Nobile', Arial, sans-serif;
+  z-index: 2;
+}
+.sponsor-card.qlarge {
+  flex: 2 1 44vw;
+  min-height: 25vh;
+  min-width: 40vw;
+  border: 0.3vw solid silver;
+  max-width: 55vw;
+  font-family: 'Nobile', Arial, sans-serif;
+  z-index: 2;
+}
+
+.sponsor-card.xlarge {
+  flex: 3 1 44vw;
+  min-width: 45vw;
+  max-width: 60vw;
+  border: 0.4vw solid gold;
+  font-family: 'Nobile', Arial, sans-serif;
+  z-index: 2;
+}
+
+.sponsor-card:hover, .sponsor-card:focus-visible,
+.sponsor-card.large:hover, .sponsor-card.large:focus-visible,
+.sponsor-card.qlarge:hover, .sponsor-card.qlarge:focus-visible,
+.sponsor-card.xlarge:hover, .sponsor-card.xlarge:focus-visible {
+  transform: scale(1.07);
+  box-shadow: 0 2vw 4vw rgba(204, 46, 204, 0.18), 0 1vw 2vw rgba(0,0,0,0.14);
+  border-color: #262254; /* Darker color on hover */
+  z-index: 3;
+}
+
+
+/* Decorative Elements */
+.curtain {
+  position: absolute;
+  top: -4vh;
+  left: -2.1vw;
+  height: 250vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.girl-megaphone {
+  position: absolute;
+  top: 46vw;
+  right: -3vw;
+  width: 30vw;
+  height: 45vh;
+  z-index: 10;
+}
+
+.girl-gears {
+  position: absolute;
+  bottom: -29vw;
+  left: 26vw;
+  width: 14vw;
+  height: 50vh;
+  z-index: 10;
+}
+.girl-bulb {
+  position: absolute;
+  bottom: -27vw;
+  left: 15vw;
+  width: 12vw;
+  height: 45vh;
+  z-index: 10;
+}
+.balloons-left {
+  position: absolute;
+  bottom: -15vw;
+  left: -8vw;
+  width: 25vw;
+  height: 35vh;
+  z-index: 10;
+}
+
+.balloons-right {
+  position: absolute;
+  bottom: -29vw;
+  right: -10vw;
+  width: 40vw;
+  height: 55vh;
+  z-index: 10;
+}
+
+.confetti {
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  background: #FF6B9D;
+  border-radius: 50%;
+}
+
+.confetti-1 { top: 20vw; left: 25vw; background: #FFE66D; }
+.confetti-2 { top: 25vw; right: 30vw; background: #4ECDC4; }
+.confetti-3 { bottom: 15vw; left: 35vw; background: #FF6B9D; }
+.confetti-4 { bottom: 20vw; right: 40vw; background: #95E1D3; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sponsors-container {
+    padding: 4vw;
+  }
+  
+  .sponsors-title {
+    font-size: 6vw;
+    margin-bottom: 6vw;
+  }
+  
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+    max-width: 80vw;
+    gap: 4vw;
+  }
+  
+  .sponsor-card.large {
+    grid-column: span 1;
+  }
+  
+  .girl-megaphone {
+    width: 16vw;
+    top: 20vw;
+    right: 4vw;
+  }
+  
+  .girl-gears {
+    width: 14vw;
+    left: 4vw;
+  }
+  
+  .balloons-left,
+  .balloons-right {
+    width: 12vw;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .sponsors-title {
+    font-size: 8vw;
+  }
+  
+  .stage-content {
+    padding: 6vw;
+  }
+  
+  .sponsors-grid {
+    max-width: 90vw;
+  }
+}
+.sponsor-card img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+  margin: 4% auto;
+  border-radius: 2vw;
+}
+/* .sponsor-card :hover {
+  transform: scale(1.06);
+  box-shadow: 0 1vw 2vw rgba(0,0,0,0.18), 0 0.5vw 1vw rgba(0,0,0,0.12);
+  z-index: 2;
+} */
