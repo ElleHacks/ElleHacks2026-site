@@ -1,41 +1,125 @@
-/* .aboutUsSection {
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+ .aboutUsSection {
     position: relative; 
-    overflow: visible;
     width: 100vw;
-    height: 100vh;
-    background-image: url('../../assets/aboutus/Rectangle 5.png');
+    height: auto;
+    background: linear-gradient(to bottom, #d1a996, #bd7777)
+
+}
+.aboutUsSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('src/assets/aboutus/Rectangle-gradient.png');
     background-size: cover;
     background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.topRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: clamp(100px, 15vw, 250px);   
+    height: clamp(150px, 15vw, 250px);
+    background-image: url('src/assets/aboutus/AboutUs_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 10;
+}
+
+.bottomRight{
+    position: absolute;
+    bottom: -12vw;
+    right: 0;
+    width: clamp(150px, 15vw, 250px);
+    height: clamp(150px, 15vw, 250px);
+    background-image: url('src/assets/aboutus/AboutUs_3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 10;
+}
+
+.bottomLeft{
+    position: absolute;
+    bottom: 0;
+    left: -8vw;
+    width: clamp(150px, 15vw, 250px);
+    height: clamp(150px, 15vw, 250px);
+    background-image: url('src/assets/aboutus/AboutUs_2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 10;
 }
 
 .aboutUsContent {
-    position: absolute;
-    left: 13.33vw;
-    top: 27.85vh;
-    width: 40vw;
+    width: auto;
     z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 200px;
 }
 
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.image{
+    width: 100%;
+    max-height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 .highlight {
+    font-family: 'Nobile', sans-serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #ffefd8;
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     margin-bottom: 2rem;
+
 }
 
 .paragraph {
+    font-family: 'Nobile', sans-serif;
     font-size: 1.25rem;
     margin-bottom: 1rem;
     position: static;
     color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-} */
+} 
 
-body {
-      overflow-x: hidden;
-}
+@media (max-width: 768px) {
+            .aboutUsContent {
+                grid-template-columns: 1fr;
+                padding: 40px;
+                gap: 30px;
+            }
+
+            .highlight {
+                font-size: 17px;
+            }
+
+            .paragraph  {
+                font-size: 15px;
+            }
+        }
+
