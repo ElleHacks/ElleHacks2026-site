@@ -96,7 +96,7 @@ body {
 .mainContent {
     position: relative;
     width: 100%;
-    min-height: 120vh;
+    min-height: 80vw; 
     overflow: visible;
 }
 
@@ -320,7 +320,9 @@ body {
         left: 10vw;
         top: 39vw;
     }
-
+    .mainContent{
+        min-height: 110vw;
+    }
     .subtitle {
         width: 60vw;
         font-size: 3vw;
