@@ -8,7 +8,6 @@ import cupGirl from '../../assets/hero/cupGirl.png';
 import leftMultipleBalloons from '../../assets/hero/MultipleBalloons.png';
 import coffeeCup from '../../assets/hero/Component 12.png';
 import cake from '../../assets/hero/Cake.png';
-import gradient from '../../assets/hero/Rectangle.png';
 import mlhBadge from '../../assets/hero/mlh-trust-badge-2026-white.svg';
 
 const Hero = () => {
@@ -36,7 +35,6 @@ const Hero = () => {
         </div>
       </header>
 
-      <div className={styles.scalingWrapper}></div>
 
       <div className={styles.mainContent}>
         <h1 className={styles.title}>ElleHacks 2026</h1>
@@ -54,7 +52,6 @@ const Hero = () => {
           <img src={leftMultipleBalloons} alt="Left Balloon" className={styles.leftmultipleBalloons} draggable="false" onContextMenu={(e) => e.preventDefault()} />
           <img src={coffeeCup} alt="Coffee Cup" className={styles.coffeeCup} draggable="false" onContextMenu={(e) => e.preventDefault()} />
           <img src={cake} alt="Cake" className={styles.cake} draggable="false" onContextMenu={(e) => e.preventDefault()} />
-          <img src={gradient} alt="Gradient" className={styles.gradient} draggable="false" onContextMenu={(e) => e.preventDefault()} />
           <div className={styles.table}></div>
         </div>
 

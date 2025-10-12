@@ -19,13 +19,6 @@ body {
     min-height: 100vh;
 }
 
-.scalingWrapper {
-    position: relative;
-    width: var(--base-width);
-    /* min-height: calc(100vh - var(--nav-height)); */
-    transform-origin: top left;
-    transform: scale(var(--scale-factor));
-}
 
 .navbar {
     position: fixed;
@@ -105,6 +98,21 @@ body {
     width: 100%;
     min-height: 120vh;
     overflow: visible;
+}
+
+.mainContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/hero/Rectangle.png');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.7;
+    z-index: 5;
 }
 
 .decorations {
@@ -244,18 +252,7 @@ body {
     z-index: 1;
 }
 
-.gradient {
-    position: absolute;
-    top: 0vw;
-    left: 0vw;
-    width: 114%;  
-    min-height: 50vw;
-    object-fit: contain; 
-    opacity: 0.73;
-    mix-blend-mode: overlay; 
-    pointer-events: none;
-    z-index: 5;
-}
+
 
 .table{
     position: absolute;
