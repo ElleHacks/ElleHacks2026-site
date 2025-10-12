@@ -1,9 +1,5 @@
-         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
- 
+
+
  .aboutUsSection {
     position: relative; 
     width: 100vw;
@@ -30,8 +26,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: clamp(100px, 15vw, 250px);   
-    height: clamp(150px, 15vw, 250px);
+    width: clamp(300px, 15vw, 500px);   
+    height: clamp(300px, 15vh, 500px);
     background-image: url('src/assets/aboutus/AboutUs_1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,8 +39,8 @@
     position: absolute;
     bottom: -12vw;
     right: 0;
-    width: clamp(150px, 15vw, 250px);
-    height: clamp(150px, 15vw, 250px);
+    width: clamp(300px, 15vw, 500px);
+    height: clamp(500px, 15vh, 500px);
     background-image: url('src/assets/aboutus/AboutUs_3.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -55,9 +51,9 @@
 .bottomLeft{
     position: absolute;
     bottom: 0;
-    left: -8vw;
-    width: clamp(150px, 15vw, 250px);
-    height: clamp(150px, 15vw, 250px);
+    left: -6vw;
+    width: clamp(500px, 15vw, 500px);
+    height: clamp(500px, 15vh, 500px);
     background-image: url('src/assets/aboutus/AboutUs_2.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -87,6 +83,13 @@
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 .highlight {
     font-family: 'Nobile', sans-serif;
     font-size: 2rem;
@@ -110,16 +113,34 @@
 @media (max-width: 768px) {
             .aboutUsContent {
                 grid-template-columns: 1fr;
-                padding: 40px;
+                padding: 35px;
+                padding-top: 50px;
                 gap: 30px;
             }
-
+            .text{
+                gap: 5px;
+            }
+            .image{
+                align-items: center;
+            }
             .highlight {
-                font-size: 17px;
+                font-size: 16px;
             }
 
             .paragraph  {
                 font-size: 15px;
+            }
+            .bottomLeft{
+                width: clamp(100px, 15vw, 500px);
+                height: clamp(100px, 15vh, 500px);
+            }
+            .bottomRight{
+                width: clamp(100px, 15vw, 500px);
+                height: clamp(100px, 15vh, 500px);
+            }
+            .topRight{
+                width: clamp(100px, 15vw, 500px);
+                height: clamp(100px, 15vh, 500px);
             }
         }
 
