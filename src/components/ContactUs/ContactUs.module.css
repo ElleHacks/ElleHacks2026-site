@@ -7,7 +7,20 @@
     background-position: center;
     overflow: hidden;
 }
-
+.contactUsSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
+    z-index: 8;
+}
 .highlight {
     position: relative;
     width: 26.6vw;      /* 510px / 1920px */

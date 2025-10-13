@@ -107,11 +107,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../assets/hero/Rectangle.png');
+    background-image: url('../../assets/location/texture.png'); 
     background-size: cover;
     background-position: center;
     mix-blend-mode: overlay; 
-    opacity: 0.7;
+    opacity: 0.73; 
     z-index: 5;
 }
 

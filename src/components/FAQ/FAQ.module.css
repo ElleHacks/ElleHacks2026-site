@@ -1,14 +1,25 @@
 .faqSection {
     position: relative;
     width: 100vw;
-    /* Remove fixed height */
     padding-bottom: 7rem;
-    background-image: url('../../assets/faq/Rectangle 8.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #BD7777, #A068A3);
+
 
     min-height: calc(100vh + 550px); 
+}
+.faqSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
+    z-index: 1;
 }
 .highlight {
     position: absolute;

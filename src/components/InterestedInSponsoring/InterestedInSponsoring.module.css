@@ -7,6 +7,20 @@
     background-position: center;
     z-index: 0;
 }
+.interestedInSponsoringSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
+    z-index: 1;
+}
 
 .formContainer {
   position: relative;
