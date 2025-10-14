@@ -16,6 +16,7 @@ const Location = () => {
 
       <h2 className={styles.addressTitle}>Address</h2>
       <p className={styles.addressText}>
+        York University,<br />
         4700 Keele St,<br />
         North York, ON M3J 1P3
       </p>

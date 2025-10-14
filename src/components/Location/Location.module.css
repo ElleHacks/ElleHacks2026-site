@@ -127,45 +127,64 @@
     color: #d13442;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .locationSection {
-        min-height: min(85vw, 1000px); 
-        padding-bottom: 40px;
+        height: auto ;
+        min-height: 100vh;
+        padding-bottom: 5vw;
     }
 
     .locationSection::before {
-        min-height: min(85vw, 1000px); 
+        height: 100%;
+    }
+
+    .locationTitle {
+        width: 50vw ;
+        height: auto ;
+        font-size: 8vw;
+        line-height: 1.2;
+        top: 15vh;
     }
     
     .mapIframe {
-        width: 55vw;
-        left: 13.33vw;
-        top: 15vw;
+        width: 75vw;
+        height: 60vw;
+        left: 12.5vw;
+        top: 25vh;
     }
     
     .addressTitle {
-        top: 55vw;
-        left: 13.33vw;
-        width: 30%;
+        width: 75vw;
+        height: auto;
+        font-size: 5vw;
+        line-height: 1.2;
+        top: calc(25vh + 65vw);
+        left: 12.5vw;
     }
     
-    .addressText {
-        top: 60vw;
-        left: 13.33vw;
-        width: 30%;
+    .locationSection .addressText {
+        width: 75vw;
+        height: auto;
+        font-size: 4vw;
+        line-height: 1.5;
+        top: calc(25vh + 75vw);
+        left: 12.5vw;
     }
     
     .interactiveMapButton {
-        top: 72vw;
-        width: 27.55vw;
-        left: 13.33vw;
+        width: 60vw;
+        height: 12vw;
+        top: calc(25vh + 95vw);
+        left: 12.5vw;
+        border-radius: 6vw;
     }
     
     .interactiveMapText {
-        top: 73.1vw;
-        left: 16.7vw;
-        width: 80%;
+        width: 60vw;
+        height: auto;
+        font-size: 4vw;
+        line-height: 1.2;
+        top: calc(25vh + 98vw);
+        left: 15vw;
     }
-
 }
