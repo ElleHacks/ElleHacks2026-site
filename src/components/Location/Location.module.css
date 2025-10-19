@@ -13,7 +13,8 @@
 .locationSection {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 45vw;
+    padding-bottom: 5vw;
     /*background-image: url('../../assets/location/Rectangle 9.png');*/
     background: linear-gradient(to bottom, #A068A3, #69407C);
     background-size: cover;
@@ -129,9 +130,8 @@
 
 @media (max-width: 768px) {
     .locationSection {
-        height: auto ;
-        min-height: 100vh;
-        padding-bottom: 5vw;
+        min-height: 160vw; 
+        padding-bottom: 3vw;
     }
 
     .locationSection::before {
@@ -139,18 +139,19 @@
     }
 
     .locationTitle {
-        width: 50vw ;
-        height: auto ;
+        width: 50vw;
+        height: auto;
         font-size: 8vw;
         line-height: 1.2;
-        top: 15vh;
+        top: 20vw; 
+        left: 12.5vw;
     }
     
     .mapIframe {
         width: 75vw;
         height: 60vw;
         left: 12.5vw;
-        top: 25vh;
+        top: 35vw; 
     }
     
     .addressTitle {
@@ -158,7 +159,7 @@
         height: auto;
         font-size: 5vw;
         line-height: 1.2;
-        top: calc(25vh + 65vw);
+        top: 100vw; 
         left: 12.5vw;
     }
     
@@ -167,14 +168,14 @@
         height: auto;
         font-size: 4vw;
         line-height: 1.5;
-        top: calc(25vh + 75vw);
+        top: 110vw; 
         left: 12.5vw;
     }
     
     .interactiveMapButton {
         width: 60vw;
         height: 12vw;
-        top: calc(25vh + 95vw);
+        top: 135vw; 
         left: 12.5vw;
         border-radius: 6vw;
     }
@@ -184,7 +185,7 @@
         height: auto;
         font-size: 4vw;
         line-height: 1.2;
-        top: calc(25vh + 98vw);
-        left: 15vw;
+        top: 139vw; 
+        left: 17vw;
     }
 }

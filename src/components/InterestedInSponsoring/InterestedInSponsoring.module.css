@@ -53,7 +53,7 @@
 
 /* Individual container widths */
 .inputContainerEmail { width: 20.2vw; }
-.inputContainerTitle {}
+
 .inputContainerMessage .formInput {
   height: 12.6vh;       
 }
@@ -255,6 +255,10 @@
 @media (max-width: 600px) {
   .highlight {
     font-size: 6vw;
+    width: 80vw;
+  }
+  .inputContainerEmail {
+    width: 100%;  
   }
 
   .formContainer {
