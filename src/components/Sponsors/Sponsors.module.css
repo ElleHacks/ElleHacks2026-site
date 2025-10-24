@@ -3,23 +3,40 @@
 /* Sponsors Page Styles */
 html, body, #root, .sponsors-container {
   /* height: 100%; */
-  min-height: 100vh;
-  width: 100%;
+  /* min-height: 100vh;
+  width: 100%; */
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .sponsors-container {
-  min-height: 100vh;
   position: relative;
   background-color: #FFEED6;
-  padding: 2vw;
+  overflow: visible;   /* Don't trap scroll inside */
+  height: auto;    
 }
 
-/* .curtain-stage {
+.sponsors-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
+    z-index: 1;
+}
+
+.curtain-stage {
   position: relative;
-  width: 100%;
-  max-width: 90vw;
+  width: 100vw;
+  max-width: 100vw;
   margin: 0 auto;
   background: linear-gradient(135deg, #E8B4B8 0%, #D4969B  50%, #C8888E 100%);
   border-radius: 0 0 3vw 3vw;
@@ -30,9 +47,9 @@ html, body, #root, .sponsors-container {
   height: 8vw;
   background: #B8777D;
   position: relative;
-} */
+} 
 
-/* .curtain-scallops {
+ .curtain-scallops {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -40,7 +57,7 @@ html, body, #root, .sponsors-container {
   height: 4vw;
   background: radial-gradient(circle at 6.25vw 0, transparent 3vw, #B8777D 3vw);
   background-size: 12.5vw 4vw;
-} */
+}
 
 .stage-content {
   background-color: #FFEED6;
@@ -56,7 +73,8 @@ html, body, #root, .sponsors-container {
   color: #412200; 
   text-align: left;
   z-index: 30;  
-  padding-left: 7vw;
+  padding-left: 12vw;
+  margin-top:20vw;;
   margin-bottom: 4vw;
   font-family: 'Nobile', Arial, sans-serif;
 }
@@ -129,10 +147,11 @@ html, body, #root, .sponsors-container {
 /* Decorative Elements */
 .curtain {
   position: absolute;
-  top: -4vh;
-  left: -2.1vw;
-  height: 250vh;
+  top: 0;
+  left:0;
+  right:0;
   width: 100vw;
+  height: 250vh;
   z-index: 0;
 }
 

@@ -35,7 +35,7 @@ import icpPngImg from '../../assets/Sponsors/icp.png';
 import siraPrintImg from '../../assets/Sponsors/SiraPrint.png';
 import vueschoolImg from '../../assets/Sponsors/vueschool.png';
 import yspaceImg from '../../assets/Sponsors/Yspace.png';
-import curtainImg from '../../assets/Sponsors/curtains 2 (1).png';
+import curtainImg from '../../assets/Sponsors/curtains.png';
 import megaphoneGirlImg from '../../assets/Sponsors/megaphonegirl.svg';
 import gearGirlImg from '../../assets/Sponsors/geargirl.svg';
 import bulbGirlImg from '../../assets/Sponsors/bulbgirl.svg';
@@ -46,8 +46,6 @@ const Sponsors = () => {
   return (
     <div className={styles['sponsors-container']}>
       <div className={styles['stage-content']}>
-        <div style={{ height: '20vh' }}></div>
-        <div></div>
         <h1 className={styles['sponsors-title']}>Last Years Sponsors</h1>
           
           <div className={styles['sponsors-grid']}>
