@@ -13,20 +13,12 @@
 .locationSection {
     position: relative;
     width: 100%;
-    min-height: 45vw;
+    min-height: 50.48vw;
     padding-bottom: 5vw;
-    /*background-image: url('../../assets/location/Rectangle 9.png');*/
     background: linear-gradient(to bottom, #A068A3, #69407C);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay; 
-    /* min-height: 50.48vw;
-    background: linear-gradient(180deg, #A168A1 0%, #704581 100%);
-    font-family: 'Nobile', sans-serif;
-    transform-origin: top left;
-    transform: scale(var(--scale-factor));
-    overflow: hidden;
-    background-blend-mode: overlay; */
 }
 
 .locationSection::before {

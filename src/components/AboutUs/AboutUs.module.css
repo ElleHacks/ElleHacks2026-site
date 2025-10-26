@@ -8,7 +8,7 @@
     padding-left: 2.5rem;   
     padding-right: 2.5rem;
     padding-top: 10.5rem;  
-    padding-bottom: 10.5rem;
+    padding-bottom: 15.5rem;
 
 }
 .aboutUsSection::before {
@@ -23,7 +23,7 @@
     background-position: center;
     mix-blend-mode: overlay; 
     opacity: 0.73; 
-    z-index: 1;
+    z-index: 5;
 }
 
 /* sm:px-35 */

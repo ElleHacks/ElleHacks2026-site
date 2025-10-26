@@ -27,11 +27,14 @@ const Hero = () => {
           <span></span>
         </div>
         <div className={`${styles.navLinks} ${isNavActive ? styles.active : ''}`}>
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Sponsors</a>
-          <a href="#">FAQ</a>
-          <a href="#">Contact Us</a>
+          <a href="#hero">Home</a>
+          <a href="#aboutus">About Us</a>
+          <a href="#sponsors">Sponsors</a>
+          <a href="#iis">Interested In Sponsoring</a>
+          <a href="#faq">FAQ</a>
+          <a href="#location">Location</a>
+          <a href="#meettheteam">Meet The Team</a>
+          <a href="#contactus">Contact Us</a>
         </div>
       </header>
 

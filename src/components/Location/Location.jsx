@@ -3,6 +3,7 @@ import styles from './Location.module.css';
 const Location = () => {
   return (
     <section className={styles.locationSection}>
+
       <h1 className={styles.locationTitle}>Location</h1>
 
       {/* Google Maps iframe */}
