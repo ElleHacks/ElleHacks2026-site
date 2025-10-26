@@ -1,27 +1,344 @@
-.sponsorsSection {
-    position: relative; 
-    overflow: visible;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../assets/sponsors/Rectangle 6.png');
-    background-size: cover;
-    background-position: center;
+@import url('https://fonts.googleapis.com/css2?family=Nobile:wght@400;700&display=swap');
+
+/* Sponsors Page Styles */
+html, body, #root, .sponsors-container {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: auto;
 }
 
-.highlight {
+.sponsors-container {
+  position: relative;
+  background-color: #FFEED6;
+  overflow: visible;   /* Don't trap scroll inside */
+}
+
+.sponsors-container::before {
+    content: '';
     position: absolute;
-    width: 33vw;
-    height: 13vh;
-    left: 10vw;
-    top: 23vh;
-
-    font-family: 'Nobile', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3vw;
-    line-height: 3.5vw;
-
-    color: #412200;
-
-    text-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
+    background-size: repeat;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
+    z-index: 6;
 }
+
+.stage-content {
+  background-color: #FFEED6;
+  padding: 4vw;
+  min-height: 50vh;
+  height: auto;
+  width: 100vw;
+  padding-bottom: 27vw;
+
+}
+
+.sponsors-title {
+  position: relative;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #412200; 
+  text-align: left;
+  z-index: 10;  
+  padding-left: 12vw;
+  margin-top:15vw;;
+  margin-bottom: 4vw;
+  font-family: 'Nobile', Arial, sans-serif;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.sponsor-card {
+  margin: 1vw;
+  background: white;
+  border-radius: 2vw;
+  aspect-ratio: 2.5/1;
+  box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.1);
+  border: 0.2vw solid #BD7777; /* Green outline */
+  flex: 1 1 20vw;
+  min-width: 20vw;
+  max-width: 22vw;
+  font-family: 'Nobile', Arial, sans-serif;
+  transition: transform 0.22s cubic-bezier(0.4, 0.2, 0.2, 1),
+    box-shadow 0.22s cubic-bezier(0.4, 0.2, 0.2, 1),
+    border-color 0.22s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.sponsor-card.large {
+  flex: 2 1 44vw;
+  min-height: 20vh;
+  max-height: 25vh;
+  min-width: 25vw;
+  max-width: 30vw;
+  border: 0.2vw solid rgb(205, 127, 50); /* Darker green outline for large cards */
+  font-family: 'Nobile', Arial, sans-serif;
+  z-index: 2;
+}
+.sponsor-card.qlarge {
+  flex: 2 1 44vw;
+  /* min-height: 20vh; */
+  min-width: 40vw;
+  border: 0.3vw solid silver;
+  max-width: 45vw;
+  font-family: 'Nobile', Arial, sans-serif;
+  z-index: 2;
+}
+
+.sponsor-card.xlarge {
+  flex: 3 1 44vw;
+  min-width: 45vw;
+  max-width: 50vw;
+  border: 0.4vw solid gold;
+  font-family: 'Nobile', Arial, sans-serif;
+  z-index: 2;
+}
+
+.sponsor-card:hover, .sponsor-card:focus-visible,
+.sponsor-card.large:hover, .sponsor-card.large:focus-visible,
+.sponsor-card.qlarge:hover, .sponsor-card.qlarge:focus-visible,
+.sponsor-card.xlarge:hover, .sponsor-card.xlarge:focus-visible {
+  transform: scale(1.07);
+  box-shadow: 0 2vw 4vw rgba(204, 46, 204, 0.18), 0 1vw 2vw rgba(0,0,0,0.14);
+  border-color: #262254; /* Darker color on hover */
+  z-index: 3;
+}
+
+
+/* Decorative Elements */
+.curtain {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  width: 100vw;
+}
+
+.girl-megaphone {
+  position: absolute;
+  top: 45vw;
+  right: 9vw;
+  width: 15vw;
+}
+
+.girl-gears {
+  position: absolute;
+  bottom: -2%;
+  left: 36%;
+  width: 14vw;
+  height: 50vh;
+  z-index: 1;
+}
+.girl-bulb {
+  position: absolute;
+  bottom: -1%;
+  left: 24%;
+  width: 12vw;
+  height: 45vh;
+  z-index: 1;
+}
+.balloons-left {
+  position: absolute;
+  bottom: 10vw;
+  left: -5.2vw;
+  width: 25vw;
+  height: 35vh;
+}
+
+.balloons-right {
+  position: absolute;
+  bottom: -10vw;
+  right: -3.2vw;
+  height: 55vh;
+  z-index: 1;
+}
+
+.confetti {
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  background: #FF6B9D;
+  border-radius: 50%;
+}
+
+.confetti-1 { top: 20vw; left: 25vw; background: #FFE66D; }
+.confetti-2 { top: 25vw; right: 30vw; background: #4ECDC4; }
+.confetti-3 { bottom: 15vw; left: 35vw; background: #FF6B9D; }
+.confetti-4 { bottom: 20vw; right: 40vw; background: #95E1D3; }
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+
+  .girl-gears {
+  position: absolute;
+  bottom: -21vw;
+  left: 35vw;
+  }
+
+.girl-bulb {
+  position: absolute;
+  bottom: -17vw;
+  left: 22vw;
+  width: 12vw;
+  height: 45vh;
+}
+.balloons-left {
+  position: absolute;
+  bottom: 0;
+  left: -5vw;
+}
+
+.balloons-right {
+  position: absolute;
+  bottom: -25vw;
+  right: -5.5vw;
+  width: 35vw;
+  z-index: 1;
+}
+
+}
+
+@media (max-width: 480px) {
+
+  .girl-megaphone {
+    width: 14vw;
+    top: 65vw;
+    right: 9vw;
+  }
+
+  .girl-gears {
+  position: absolute;
+  bottom: -46vw;
+  left: 43vw;
+  width: 17vw;
+  }
+
+.girl-bulb {
+  position: absolute;
+  bottom: -40vw;
+  left: 29vw;
+  width: 15vw;
+}
+
+.balloons-left {
+  position: absolute;
+  bottom: -23vw;
+  left: -5vw;
+  width: 30vw;
+}
+
+.balloons-right {
+  position: absolute;
+  bottom: -50vw;
+  right: -5.5vw;
+  width: 35vw;
+  z-index: 1;
+}
+
+  .sponsors-title {
+    font-size: 8vw;
+  }
+  
+  /* .stage-content {
+    padding: 6vw;
+  } */
+  
+  .sponsors-grid {
+    max-width: 90vw;
+  }
+}
+.sponsor-card img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+  margin: 4% auto;
+  border-radius: 2vw;
+}
+
+@media (max-width: 389px) {
+
+  .girl-megaphone {
+    width: 14vw;
+    top: 65vw;
+    right: 9vw;
+  }
+
+  .girl-gears {
+  position: absolute;
+  bottom: -38vw;
+  left: 43vw;
+  width: 17vw;
+  }
+
+.girl-bulb {
+  position: absolute;
+  bottom: -33vw;
+  left: 29vw;
+  width: 15vw;
+}
+
+.balloons-left {
+  position: absolute;
+  bottom: -13vw;
+  left: -5vw;
+  width: 30vw;
+}
+
+.balloons-right {
+  position: absolute;
+  bottom: -40vw;
+  right: -5.5vw;
+  width: 35vw;
+  z-index: 1;
+}
+
+}
+
+@media (max-width: 350px) {
+
+  .girl-gears {
+  position: absolute;
+  bottom: -60vw;
+  left: 43vw;
+  width: 17vw;
+  }
+
+.girl-bulb {
+  position: absolute;
+  bottom: -53vw;
+  left: 29vw;
+  width: 15vw;
+}
+
+.balloons-left {
+  position: absolute;
+  bottom: -19vw;
+  left: -5vw;
+  width: 30vw;
+}
+
+.balloons-right {
+  position: absolute;
+  bottom: -60vw;
+  right: -5.5vw;
+  width: 35vw;
+  z-index: 1;
+}
+
+}
+
+
