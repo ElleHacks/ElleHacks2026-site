@@ -12,7 +12,7 @@ function NextArrow({ onClick, currentSlide, slideCount }) {
     return (
       <div
         onClick={onClick}
-        className="absolute top-[30vh] right-[7vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
+        className="absolute top-[30vh] right-[8vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
       >
         <img
           src="src/assets/meettheteam/next-arrow.png"
@@ -29,7 +29,7 @@ function NextArrow({ onClick, currentSlide, slideCount }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-[30vh] right-[1vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
+      className="absolute top-[30vh] right-[3vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
     >
       <img
         src="src/assets/meettheteam/next-arrow.png"
@@ -48,7 +48,7 @@ function PrevArrow({ onClick, currentSlide }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-[30vh] left-[7vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
+      className="absolute top-[30vh] left-[8vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
     >
       <img
         src="src/assets/meettheteam/prev-arrow.png"
@@ -62,7 +62,7 @@ function PrevArrow({ onClick, currentSlide }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-[30vh] left-[1vw] w-[4.4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
+      className="absolute top-[30vh] left-[2vw] w-[4vw] h-[7.8vh] cursor-pointer flex items-center justify-center hover:opacity-80 transition-opacity z-10"
     >
       <img
         src="src/assets/meettheteam/prev-arrow.png"
@@ -92,7 +92,7 @@ const SlideDecoration = ({ decoration }) => {
     return (
       <div className={decoration.position}>
         <h1
-          className="text-[2.1vw] font-medium leading-none text-white"
+          className="mt-2"
           style={{ fontFamily: "Nobile, sans-serif" }}
         >
           {decoration.text}
@@ -109,13 +109,13 @@ const TeamMember = ({ member }) => (
     <img
       src={member.image}
       alt={member.name}
-      className="object-contain w-[16vw] sm:w-[40vw] xs:w-[30vw] max-h-[30vh] sm:max-h-[25vh] xs:max-h-[20vh]"
+      className="object-contain"
     />
   </div>
 );
 
 const TeamSlide = ({ slide }) => (
-  <div className="relative h-[70vh] w-full">
+  <div className="relative h-[55vh] md:h-[70vh] w-full">
     <div className="relative h-full w-full"> {/* new wrapper */}
       {/* Render decorations */}
       {slide.decorations.map((decoration, index) => (
@@ -160,7 +160,7 @@ const MeetTheTeam = () => {
     let style = {
       position: "absolute",
       top: "27vh",
-      left: isFirstSlide ? "6.1vw" : isLastSlide ? "-6.1vw" : "0",
+      left: isFirstSlide ? "5.0vw" : isLastSlide ? "-6.1vw" : "0",
       height: "70vh",
       width: "100vw",
       backgroundColor: slideConfig.bgColor,
@@ -170,10 +170,11 @@ const MeetTheTeam = () => {
   };
 
   return (
+    <>
     <div className={styles.meetTheTeamSection}>
       <p className={styles.highlight}>Meet the Team</p>
       <div
-        className={`relative transition-all duration-500 ease-in-out ${isFirstSlide ? 'rounded-l-[3.3vw]' : ''} ${isLastSlide ? 'rounded-r-[3.3vw]' : ''}`}
+        className={`relative transition-all duration-500 ease-in-out ${isFirstSlide ? 'rounded-l-[3.5vw]' : ''} ${isLastSlide ? 'rounded-r-[3.5vw]' : ''}`}
         style={getSlideContainerStyle()}
       >
         <Slider ref={setSliderRef} {...sliderSettings}>
@@ -189,6 +190,23 @@ const MeetTheTeam = () => {
         </Slider>
       </div>
     </div>
+
+
+    <div className={styles.meetTheTeamSectionMobile}>
+      <p className={styles.highlight}>Meet the Team</p>
+      <div className="relative top-40 left-[8%] overflow-hidden w-[100vw] h-[375vh] rounded-l-[3.5vw] bg-[#A7748E]">
+
+          {slides.map((slide, index) => (
+            <TeamSlide
+              key={`slide-${index}`}
+              slide={slide}
+            />
+          ))}
+
+      </div>
+      
+    </div>
+    </>
   );
 }
 
