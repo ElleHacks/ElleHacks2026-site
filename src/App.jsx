@@ -12,13 +12,21 @@ import ContactUs from "./components/ContactUs/ContactUs";
 function App() {
   return (
     <div className="app-container">
+      <div id="hero"></div>
       <Hero />
+      <div id="aboutus"></div>
       <AboutUs />
+      <div id="sponsors"></div>
       <Sponsors />
+      <div id="iis"></div>
       <InterestedInSponsoring />
+      <div id="faq"></div>
       <FAQ />
+      <div id="location"></div>
       <Location />
+      <div id="meettheteam"></div>
       <MeetTheTeam />
+      <div id="contactus"></div>
       <ContactUs />
     </div>
   );

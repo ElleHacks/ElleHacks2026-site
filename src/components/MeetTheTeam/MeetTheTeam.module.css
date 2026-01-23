@@ -2,9 +2,42 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/meettheteam/Rectangle 10.png');
+    background: linear-gradient(to bottom, #6F4480, #21083D);
+}
+
+.meetTheTeamSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
     background-size: cover;
     background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
+    /* z-index: 1; */
+}
+
+.meetTheTeamSectionMobile {
+    position: relative;
+    height: 400vh;
+    background: linear-gradient(to bottom, #6F4480, #21083D);
+}
+
+.meetTheTeamSectionMobile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/location/texture.png'); 
+    background-size: repeat;
+    background-position: center;
+    mix-blend-mode: overlay; 
+    opacity: 0.73; 
 }
 
 .highlight {
@@ -12,7 +45,7 @@
     width: 23.9vw;      /* 459px / 1920px */
     height: 6.3vh;      /* 68px / 1080px */
     left: 10vw;         /* 192px / 1920px */
-    top: 13.1vh;        /* 142px / 1080px */
+    top: 15%;        /* 142px / 1080px */
 
     font-family: 'Nobile', sans-serif;
     font-style: normal;
@@ -26,3 +59,27 @@
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }   
+
+
+@media (max-width: 768px) {
+    .meetTheTeamSection {
+        display: none;
+    }
+    .meetTheTeamSectionMobile {
+        display: block;
+    }
+    .highlight {
+        top: 2.1%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .meetTheTeamSection {
+        display: block;
+    }
+
+    .meetTheTeamSectionMobile {
+        display: none;
+    }
+}
