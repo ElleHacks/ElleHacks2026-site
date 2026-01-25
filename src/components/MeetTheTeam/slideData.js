@@ -325,42 +325,52 @@ const slideData = {
     },
     decorations: [
        {
+        type: "image", 
+        src: "src/assets/meettheteam/director-tag.png",
+        position: "absolute top-[-2vh] left-[24vw] w-[10vw]"
+      },
+       {
         type: "image",
         src: "src/assets/meettheteam/cake-rectangle.png",
-        position: "absolute top-[45vh] right-[42vw] w-[15vw] rotate-10"
+        position: "absolute top-[45vh] right-[22vw] w-[15vw] rotate-10"
       },
       {
         type: "image", 
         src: "src/assets/meettheteam/beige-flowers.png",
-        position: "absolute top-[35vh] right-[27vw] w-[7vw] rotate-270"
+        position: "absolute top-[30vh] left-[8vw] w-[7vw] rotate-270"
       },
       {
         type: "label",
         text: "Design",
         position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
       },
-      {
-        type: "image", 
-        src: "src/assets/meettheteam/beige-flowers.png",
-        position: "absolute top-[5vh] left-[35vw] w-[7vw] rotate-270"
-      },
     ],
     members: [
       {
-        name: "Samreen Ahmed",
-        image: "src/assets/meettheteam/samreen-nametag.png",
-        position: "absolute top-[35vh] left-[22vw] w-[16vw]"
-      },
-      {
         name: "Subin Hwang",
         image: "src/assets/meettheteam/subin-nametag.png",
-        position: "absolute top-[5vh] left-[41vw] w-[16vw]"
+        position: "absolute top-[5vh] left-[15vw] w-[16vw]"
       },
       {
-        name: "Tashfia Oyshi",
+        name: "Tashfia Oyshi", 
         image: "src/assets/meettheteam/tashfia-nametag.png",
-        position: "absolute top-[35vh] left-[62vw] w-[16vw]"
+        position: "absolute top-[5vh] left-[35vw] w-[16vw]"
       },
+      {
+        name: "Niloofar Haghighi",
+        image: "src/assets/meettheteam/niloofar-nametag.png", 
+        position: "absolute top-[5vh] left-[55vw] w-[16vw]"
+      },
+      {
+        name: "Sanjana Copparam",
+        image: "src/assets/meettheteam/sanjana-nametag.png",
+        position: "absolute top-[35vh] left-[25vw] w-[16vw]"
+      },
+      {
+        name: "Samreen Ahmed",
+        image: "src/assets/meettheteam/samreen-nametag.png",
+        position: "absolute top-[35vh] left-[45vw] w-[16vw]"
+      }
     ]
   },
   Outreach: {
