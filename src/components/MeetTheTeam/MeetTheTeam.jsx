@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { slides } from "./slideData";
 
 function NextArrow({ onClick, currentSlide, slideCount }) {
+
+  const lastSlide = slideCount - 1;
     
   // Always show next arrow except on the last slide
   if (currentSlide === 0)
@@ -23,7 +25,7 @@ function NextArrow({ onClick, currentSlide, slideCount }) {
       </div>
     );
 
-    if (currentSlide === 8)
+    if (currentSlide === lastSlide)
     return null;
 
   return (
@@ -44,7 +46,7 @@ function NextArrow({ onClick, currentSlide, slideCount }) {
 function PrevArrow({ onClick, currentSlide }) {
   if (currentSlide === 0) return null;
 
-  if (currentSlide === 8) 
+  if (currentSlide === slides.length - 1) 
   return (
     <div
       onClick={onClick}
@@ -153,7 +155,7 @@ const MeetTheTeam = () => {
 
   const slideConfig = slides[currentSlide]?.slideConfig || { width: "100vw", height: "68vh", bgColor: "#A7748E" };
   const isFirstSlide = currentSlide === 0;
-  const isLastSlide = currentSlide === 8; // slide 8 is the last
+  const isLastSlide = currentSlide === slides.length - 1; // slide 8 is the last
 
   // Dynamic style for slide container
   const getSlideContainerStyle = () => {

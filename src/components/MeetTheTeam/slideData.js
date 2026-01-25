@@ -440,7 +440,7 @@ const slideData = {
       },
     ]
   },
-  CommunityEngagement: {
+  CommunityEngagement1: {
     title: "Community Engagement",
     slideConfig: {
       width: "105vw",
@@ -451,7 +451,7 @@ const slideData = {
       {
         type: "image", 
         src: "src/assets/meettheteam/director-tag.png",
-        position: "absolute top-[-2vh] left-[28vw] w-[10vw]"
+        position: "absolute top-[-2vh] left-[29vw] w-[10vw]"
       },
       {
         type: "image", 
@@ -473,32 +473,69 @@ const slideData = {
       {
         name: "Rodiat Adeoye",
         image: "src/assets/meettheteam/rodiat-nametag.png",
-        position: "absolute top-[5vh] left-[19vw] w-[16vw]"
+        position: "absolute top-[5vh] left-[20vw] w-[16vw]"
       },
       {
         name: "Bani Kaur",
-        image: "src/assets/meettheteam/bani-nametag.png",
-        position: "absolute top-[5vh] left-[39vw] w-[16vw]"
+        image: "src/assets/meettheteam/bani-nametag.png", 
+        position: "absolute top-[5vh] left-[50vw] w-[6vw]"
       },
       {
         name: "Vasudha Rampal",
         image: "src/assets/meettheteam/vasudha-nametag.png",
-        position: "absolute top-[5vh] left-[59vw] w-[16vw]"
+        position: "absolute top-[34vh] left-[35vw] w-[15vw]"
       },
-{
-        name: "Baran Parsi",
+      {
+        name: "Baran Parsai",
         image: "src/assets/meettheteam/baran-nametag.png",
-        position: "absolute top-[35vh] left-[29vw] w-[16vw]"
+        position: "absolute top-[34vh] left-[55vw] w-[16vw]"
+      }
+    ]
+  },
+  CommunityEngagement2: {
+    title: "Community Engagement",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image",
+        src: "src/assets/meettheteam/cookies.png",
+        position: "absolute top-[40vh] right-[42vw] w-[15vw] rotate-10"
       },
       {
-        name: "Varun Patel",
-        image: "src/assets/meettheteam/varun-nametag.png",
-        position: "absolute top-[35vh] left-[49vw] w-[16vw]"
+        type: "image", 
+        src: "src/assets/meettheteam/beige-flowers.png",
+        position: "absolute top-[35vh] right-[27vw] w-[7vw] rotate-270"
+      },
+       { 
+        type: "label",
+        text: "Community Engagement",
+        position: "absolute bottom-[2vh] left-[7vw] w-[29vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
       },
       {
-        name: "Khadija Saleem",
-        image: "src/assets/meettheteam/khadija-nametag.png",
-        position: "absolute top-[35vh] left-[69vw] w-[16vw]"
+        type: "image", 
+        src: "src/assets/meettheteam/beige-flowers.png",
+        position: "absolute top-[5vh] left-[35vw] w-[7vw] rotate-270"
+      },
+    ],
+    members: [
+      {
+        name: "Sadia Shifa",
+        image: "src/assets/meettheteam/sadia-nametag.png",
+        position: "absolute top-[35vh] left-[22vw] w-[16vw]"
+      },
+      {
+        name: "Arpi Harutyunyan",
+        image: "src/assets/meettheteam/arpi-nametag.png",
+        position: "absolute top-[5vh] left-[41vw] w-[16vw]"
+      },
+      {
+        name: "Hajrah Aleem",
+        image: "src/assets/meettheteam/hajrah-nametag.png",
+        position: "absolute top-[35vh] left-[62vw] w-[16vw]"
       },
     ]
   },
@@ -513,7 +550,8 @@ const slides = [
   slideData.Marketing,
   slideData.Design,
   slideData.Outreach,
-  slideData.CommunityEngagement
+  slideData.CommunityEngagement1,
+  slideData.CommunityEngagement2
 ];
 
 export { slideData, slides };
