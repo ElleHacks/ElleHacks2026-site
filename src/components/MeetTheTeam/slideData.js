@@ -92,8 +92,8 @@ const slideData = {
         position: "absolute top-[5vh] left-[50vw] w-[6vw]"
       },
       {
-        name: "Vansh Madan",
-        image: "src/assets/meettheteam/vansh-nametag.png",
+        name: "Arwa Shahzad",
+        image: "src/assets/meettheteam/arwa-nametag.png",
         position: "absolute top-[34vh] left-[35vw] w-[15vw]"
       },
       {
@@ -259,7 +259,7 @@ const slideData = {
       }
     ]
   },
-  Marketing: {
+  Marketing1: {
     title: "Marketing",
     slideConfig: {
       width: "105vw",
@@ -267,7 +267,12 @@ const slideData = {
       bgColor: "#A7748E"
     },
     decorations: [
-       {
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/director-tag.png",
+        position: "absolute top-[-2vh] left-[30.5vw] w-[10vw]"
+      }, 
+      {
         type: "image", 
         src: "src/assets/meettheteam/pie.png", // pink pie
         position: "absolute top-[45vh] right-[21vw] w-[10vw]"
@@ -290,8 +295,8 @@ const slideData = {
     ],
     members: [
       {
-        name: "Abeeha Zubair",
-        image: "src/assets/meettheteam/abeeha-nametag.png",
+        name: "Shivani Kadirgamarajah",
+        image: "src/assets/meettheteam/shivani-nametag.png",
         position: "absolute top-[5vh] left-[22vw] w-[16vw]"
       },
       {
@@ -305,13 +310,60 @@ const slideData = {
         position: "absolute top-[5vh] left-[62vw] w-[16vw]"
       },
       {
-        name: "Larissa Singh",
-        image: "src/assets/meettheteam/larissa-nametag.png",
+        name: "Abeeha Zubair",
+        image: "src/assets/meettheteam/abeeha-nametag.png",
         position: "absolute top-[35vh] left-[32vw] w-[16vw]"
       },
       {
-        name: "Nabeela Ansari",
-        image: "src/assets/meettheteam/nabeela-nametag.png",
+        name: "Reetika Deal",
+        image: "src/assets/meettheteam/reetika-nametag.png",
+        position: "absolute top-[35vh] left-[52vw] w-[16vw]"
+      }
+    ]
+  },
+  Marketing2: {
+    title: "Marketing",
+    slideConfig: {
+      width: "105vw",
+      height: "72vh",
+      bgColor: "#A7748E"
+    },
+    decorations: [
+       {
+        type: "image",
+        src: "src/assets/meettheteam/cake-rectangle.png",
+        position: "absolute top-[6vh] right-[43vw] w-[17vw] rotate-30"
+      },
+      {
+        type: "image", 
+        src: "src/assets/meettheteam/pink-flower.png",
+        position: "absolute top-[36vh] right-[27vw] w-[5vw] rotate-270"
+      },
+      {
+        type: "label",
+        text: "Marketing",
+        position: "absolute bottom-[2vh] left-[2.2vw] w-[16vw] h-[5.8vh] rounded-[1.64vw] bg-[#270D43] flex justify-center items-center"
+      }
+    ],
+    members: [
+      {
+        name: "Henjun Ji",
+        image: "src/assets/meettheteam/henjun-nametag.png",
+        position: "absolute top-[5vh] left-[22vw] w-[16vw]"
+      },
+      {
+        name: "Anahita Dahiya",
+        image: "src/assets/meettheteam/anahita-nametag.png",
+        position: "absolute top-[5vh] left-[62vw] w-[16vw]"
+      },
+      {
+        name: "Sajal Sandhu",
+        image: "src/assets/meettheteam/sajal-nametag.png",
+        position: "absolute top-[35vh] left-[32vw] w-[16vw]"
+      },
+      {
+        name: "Yuffie Ji",
+        image: "src/assets/meettheteam/yuffie-nametag.png",
         position: "absolute top-[35vh] left-[52vw] w-[16vw]"
       }
     ]
@@ -547,7 +599,8 @@ const slides = [
   slideData.Logistics2,
   slideData.IT1,
   slideData.IT2,
-  slideData.Marketing,
+  slideData.Marketing1,
+  slideData.Marketing2,
   slideData.Design,
   slideData.Outreach,
   slideData.CommunityEngagement1,
