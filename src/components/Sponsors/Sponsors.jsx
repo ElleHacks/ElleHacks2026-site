@@ -139,7 +139,7 @@ const Sponsors = () => {
               <a href="https://saily.com/offer/?utm_source=google&utm_medium=cpc&utm_campaign=21042331412&utm_content=160754904922&utm_term=saily&gad_source=1&gad_campaignid=21042331412&gbraid=0AAAAA9ThE5LtJi9zqHrofEtewMU9qKJOL&gclid=CjwKCAiA64LLBhBhEiwA-Pxgu_NLGeCKj6PB8xgmQaf_Q_i7wxHurCDjb7ET9yCrVxSqEoODvhTbThoCsYAQAvD_BwE" target="_blank" rel="noreferrer"><img src={sailyImg} alt="Saily img" /></a>
             </div>
             <div className={`${styles['sponsor-card']} ${styles['community']}`}>
-              <a href="https://nordvpn.com/country/canada/?vpn=brand&nc=Search_-_Canada_-_Pure_Brand_-_Exact_-_EN_-_DMT_-_CAD&ns=google&nm=cpc&nt=nord%20vpn&na=181012210933&gad_source=1&gad_campaignid=22680783825&gbraid=0AAAAADwsNkT339QWi2zPHrhnR63t0cBZs&gclid=CjwKCAiA64LLBhBhEiwA-Pxgu5oXGWYBzivbahsdEH22JQV6dtSD7xD_UtjYHOU393tW5k-d7p7VFhoCGM8QAvD_BwE" target="_blank" rel="noreferrer"><img src={nordvpnImg} alt="NordVPN img" /></a>
+              <a href="https://nordvpn.com/coupon/deal/?coupon=hackathons&utm_medium=affiliate&utm_term=&utm_content&utm_source=aff92203&utm_campaign=off600" target="_blank" rel="noreferrer"><img src={nordvpnImg} alt="NordVPN img" /></a>
             </div>
             <div className={`${styles['sponsor-card']} ${styles['community']}`}>
               <a href="https://nordpass.com/password-manager/special/?utm_source=google&utm_medium=cpc&utm_campaign=18308653414&utm_content=141393143419&utm_term=nordpass&gad_source=1&gad_campaignid=18308653414&gbraid=0AAAAACc38-qvFIFy0N6OtsCCxjdd1G8R-&gclid=CjwKCAiA64LLBhBhEiwA-Pxgu-awgA1WPa-rgq-45H5tgZfBSOKPOgrEQ-WJXNos8bh-HxxfGtaqhxoCJmIQAvD_BwE" target="_blank" rel="noreferrer"><img src={nordpassImg} alt="NordPass img" /></a>
