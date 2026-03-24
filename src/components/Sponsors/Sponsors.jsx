@@ -145,7 +145,7 @@ const Sponsors = () => {
               <a href="https://nordpass.com/password-manager/special/?utm_source=google&utm_medium=cpc&utm_campaign=18308653414&utm_content=141393143419&utm_term=nordpass&gad_source=1&gad_campaignid=18308653414&gbraid=0AAAAACc38-qvFIFy0N6OtsCCxjdd1G8R-&gclid=CjwKCAiA64LLBhBhEiwA-Pxgu-awgA1WPa-rgq-45H5tgZfBSOKPOgrEQ-WJXNos8bh-HxxfGtaqhxoCJmIQAvD_BwE" target="_blank" rel="noreferrer"><img src={nordpassImg} alt="NordPass img" /></a>
             </div>
             <div className={`${styles['sponsor-card']} ${styles['community']}`}>
-              <a href="https://nordvpn.com/blog/introducing-nordprotect/?srsltid=AfmBOopzjXJ5VwEswWC-nOcZMGFpsKZ34KQBKEI3nbJVuYTaFafwvXuV" target="_blank" rel="noreferrer"><img src={nordprotectImg} alt="NordProtect img" /></a>
+              <a href="https://nordprotect.com/" target="_blank" rel="noreferrer"><img src={nordprotectImg} alt="NordProtect img" /></a>
             </div>
             <div className={`${styles['sponsor-card']} ${styles['community']}`}>
               <a href="https://nexos.ai/" target="_blank" rel="noreferrer"><img src={nexosImg} alt="Nexos AI img" /></a>
